@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brunch Catering Near Me in Charleston, SC | Delivered to Your Rental</title>
+  <meta name="description" content="Looking for brunch catering near you in Charleston, SC? Three local brunch caterers that deliver to your Airbnb, rental house, or event: Sweet Palm Events, Callie's Hot Little Biscuit, and Bodega.">
+  <link rel="canonical" href="https://charlestonbachelorettebrunch.com/brunch-catering.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Brunch Catering Near Me in Charleston, SC">
+  <meta property="og:description" content="Local brunch caterers in Charleston, SC that bring breakfast and brunch trays to your rental or event.">
+  <meta property="og:url" content="https://charlestonbachelorettebrunch.com/brunch-catering.html">
+  <meta property="og:image" content="https://charlestonbachelorettebrunch.com/images/charleston-brunch-catering-hero.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+:root {
+  --pink: #e8457f;
+  --pink-dark: #c72d66;
+  --pink-soft: #ffe4ee;
+  --pink-pale: #fff4f8;
+  --pink-line: #f7c6d8;
+  --ink: #3a1f2b;
+  --muted: #7a5566;
+  --white: #ffffff;
+}
+
+body {
+  background: var(--white);
+  color: var(--ink);
+  font-family: "Lato", system-ui, -apple-system, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, .navbar-brand {
+  font-family: "Playfair Display", Georgia, serif;
+  color: var(--ink);
+}
+
+a { color: var(--pink); }
+a:hover { color: var(--pink-dark); }
+
+/* Nav */
+.navbar { background: var(--pink); box-shadow: 0 2px 12px rgba(232, 69, 127, .25); }
+.navbar-brand, .navbar-brand:hover { color: var(--white) !important; font-weight: 700; font-size: 1.35rem; }
+.navbar-brand span { color: var(--pink-soft); font-style: italic; }
+.nav-link { color: var(--white) !important; font-weight: 700; }
+.nav-link:hover { color: var(--pink-soft) !important; }
+.navbar-toggler { border-color: rgba(255,255,255,.7); }
+.navbar-toggler-icon { filter: invert(1) brightness(2); }
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #ff7aa8 0%, var(--pink) 55%, var(--pink-dark) 100%);
+  padding: 5rem 0 4rem;
+  color: var(--white);
+}
+.hero h1 { color: var(--white); font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 700; }
+.hero .lead { color: #fff0f5; max-width: 720px; }
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  font-size: .8rem;
+  font-weight: 700;
+  color: var(--pink);
+}
+.hero .eyebrow { color: var(--pink-soft); }
+
+.btn-rose { background: var(--pink); color: var(--white); border: 2px solid var(--pink); font-weight: 700; border-radius: 30px; padding-left: 1.4rem; padding-right: 1.4rem; }
+.btn-rose:hover { background: var(--pink-dark); border-color: var(--pink-dark); color: var(--white); }
+.btn-outline-rose { border: 2px solid var(--pink); color: var(--pink); font-weight: 700; border-radius: 30px; background: var(--white); }
+.btn-outline-rose:hover { background: var(--pink); color: var(--white); }
+.hero .btn-rose { background: var(--white); color: var(--pink); border-color: var(--white); }
+.hero .btn-rose:hover { background: var(--pink-soft); border-color: var(--pink-soft); color: var(--pink-dark); }
+.hero .btn-outline-rose { background: transparent; border-color: var(--white); color: var(--white); }
+.hero .btn-outline-rose:hover { background: var(--white); color: var(--pink); }
+
+section { padding: 3.5rem 0; }
+.section-title { font-size: clamp(1.7rem, 3.5vw, 2.3rem); margin-bottom: .5rem; }
+.section-title::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 4px;
+  border-radius: 4px;
+  background: var(--pink);
+  margin-top: .6rem;
+}
+.section-intro { color: var(--muted); max-width: 760px; }
+
+/* Quick picks */
+.quick-picks { background: var(--white); border: 2px solid var(--pink-line); border-radius: 16px; }
+.quick-picks table { margin: 0; }
+.quick-picks th { font-family: "Playfair Display", Georgia, serif; background: var(--pink); color: var(--white); }
+.quick-picks tbody tr:nth-child(odd) td { background: var(--pink-pale); }
+
+/* Brunch list section */
+#brunch-spots { background: var(--pink-pale); padding-top: 3.5rem !important; }
+
+/* Cards */
+.spot-card {
+  background: var(--white);
+  border: 2px solid var(--pink-line);
+  border-radius: 18px;
+  overflow: hidden;
+  height: 100%;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.spot-card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(232, 69, 127, .18); }
+.spot-card .photo-slot {
+  aspect-ratio: 4 / 3;
+  background: linear-gradient(135deg, var(--pink-soft), #ffd0e1);
+  overflow: hidden;
+}
+.spot-card .photo-slot img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.spot-card .card-body { padding: 1.4rem 1.5rem 1.6rem; }
+.spot-card h3 { font-size: 1.4rem; margin-bottom: .25rem; }
+.spot-card h3 a { color: var(--ink); text-decoration: none; }
+.spot-card h3 a:hover { color: var(--pink); }
+.spot-num {
+  display: inline-block;
+  background: var(--pink);
+  color: var(--white);
+  font-weight: 700;
+  font-size: .8rem;
+  border-radius: 20px;
+  padding: .15rem .7rem;
+  margin-bottom: .6rem;
+}
+.spot-meta { font-size: .9rem; color: var(--muted); margin-bottom: .75rem; }
+.tag {
+  display: inline-block;
+  background: var(--pink-soft);
+  color: var(--pink-dark);
+  border-radius: 20px;
+  font-size: .78rem;
+  font-weight: 700;
+  padding: .15rem .65rem;
+  margin: 0 .25rem .35rem 0;
+}
+.bach-tip {
+  background: var(--pink-pale);
+  border-left: 4px solid var(--pink);
+  border-radius: 8px;
+  padding: .7rem .9rem;
+  font-size: .94rem;
+  margin-top: .75rem;
+}
+.featured { border: 3px solid var(--pink); }
+.featured-label {
+  display: inline-block;
+  background: var(--pink-dark);
+  color: var(--white);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  border-radius: 20px;
+  padding: .15rem .65rem;
+  margin-left: .35rem;
+}
+
+/* Activities band */
+.activities-band { background: var(--white); }
+
+/* Callout */
+.callout {
+  background: linear-gradient(135deg, var(--pink) 0%, var(--pink-dark) 100%);
+  color: var(--white);
+  border-radius: 18px;
+  padding: 2rem;
+}
+.callout h3 { color: var(--white); }
+.callout a:not(.btn) { color: var(--white); font-weight: 700; }
+.callout .btn-rose { background: var(--white); color: var(--pink); border-color: var(--white); }
+.callout .btn-rose:hover { background: var(--pink-soft); color: var(--pink-dark); }
+
+/* Planning tips */
+#planning-tips { background: var(--pink-pale); }
+
+/* Itinerary */
+.timeline { border-left: 3px solid var(--pink-line); padding-left: 1.5rem; }
+.timeline .step { margin-bottom: 1.4rem; position: relative; }
+.timeline .step::before {
+  content: "";
+  position: absolute;
+  left: -1.95rem;
+  top: .45rem;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--pink);
+  box-shadow: 0 0 0 3px var(--white);
+}
+.timeline .time { font-weight: 700; color: var(--pink); }
+
+/* Legal pages */
+.legal h2 { font-size: 1.5rem; margin-top: 2rem; color: var(--pink-dark); }
+.legal { max-width: 820px; }
+
+/* Footer */
+footer { background: var(--pink-dark); color: #ffe9f1; padding: 3rem 0 2rem; font-size: .95rem; }
+footer a { color: var(--white); }
+footer a:hover { color: var(--pink-soft); }
+footer h4 { color: var(--white); font-size: 1.15rem; }
+footer .small { color: #ffd3e3; }
+footer hr { border-color: rgba(255,255,255,.35) !important; }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Brunch Catering Near Me in Charleston, SC",
+    "url": "https://charlestonbachelorettebrunch.com/brunch-catering.html",
+    "isPartOf": { "@type": "WebSite", "name": "Charleston Bachelorette Brunch", "url": "https://charlestonbachelorettebrunch.com/" },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Charleston Bachelorette Brunch", "item": "https://charlestonbachelorettebrunch.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Brunch Catering", "item": "https://charlestonbachelorettebrunch.com/brunch-catering.html" }
+      ]
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "name": "Brunch Catering in Charleston, SC",
+      "numberOfItems": 3,
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "item": { "@type": "FoodEstablishment", "name": "Sweet Palm Events", "url": "https://sweetpalmevents.com/", "address": { "@type": "PostalAddress", "streetAddress": "471 King St", "addressLocality": "Charleston", "addressRegion": "SC", "addressCountry": "US" } } },
+        { "@type": "ListItem", "position": 2, "item": { "@type": "FoodEstablishment", "name": "Callie's Hot Little Biscuit Catering", "address": { "@type": "PostalAddress", "addressLocality": "North Charleston", "addressRegion": "SC", "addressCountry": "US" } } },
+        { "@type": "ListItem", "position": 3, "item": { "@type": "FoodEstablishment", "name": "Bodega Catering", "address": { "@type": "PostalAddress", "addressLocality": "Charleston", "addressRegion": "SC", "addressCountry": "US" } } }
+      ]
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Charleston <span>Bachelorette</span> Brunch</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html#brunch-spots">Brunch Spots</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#after-brunch">After Brunch</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#planning-tips">Planning Tips</a></li>
+          <li class="nav-item"><a class="nav-link" href="brunch-catering.html">Brunch Catering</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <p class="eyebrow mb-2"><a href="https://charlestonbachelorettebrunch.com/" class="text-reset text-decoration-none">Charleston Bachelorette Brunch</a> &rsaquo; Brunch Catering</p>
+      <h1>Brunch Catering Near Me in Charleston, SC</h1>
+      <p class="lead mt-3">Skip the two-hour brunch wait. These local brunch caterers in Charleston deliver breakfast and brunch trays to your Airbnb, rental house, or pool deck, so the bride can stay in her robe and the group can eat, toast, and take photos without leaving home.</p>
+      <div class="d-flex flex-wrap gap-2 mt-4">
+        <a href="#caterers" class="btn btn-rose btn-lg">See the 3 Caterers</a>
+        <a href="https://charlestonbachelorettebrunch.com/" class="btn btn-outline-rose btn-lg">Brunch Restaurants Instead</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- INTRO -->
+  <section>
+    <div class="container">
+      <div class="row g-5 align-items-start">
+        <div class="col-lg-7">
+          <h2 class="section-title">Why book brunch catering in Charleston</h2>
+          <p>Weekend brunch reservations in downtown Charleston are hard to get for big groups, and the morning after a night on Upper King is rarely when a bachelorette crew wants to get dressed and wait for a table. Brunch catering flips that around. The food comes to you, the group stays together at the rental, and you can set up a mimosa bar, decorate the table, and take all the bride photos you want without anyone rushing you.</p>
+          <p>Catering also works well when your group is larger than most restaurants can seat, when you're staying outside downtown on Folly Beach, Isle of Palms, James Island, or in Mount Pleasant, or when you have a boat or activity booked right after brunch.</p>
+          <p class="mb-0">Prefer going out? Our main guide to <a href="https://charlestonbachelorettebrunch.com/">Charleston bachelorette brunch</a> covers the best brunch restaurants in town for bachelorette groups.</p>
+        </div>
+        <div class="col-lg-5">
+          <div class="quick-picks p-0 overflow-hidden">
+            <table class="table align-middle">
+              <thead>
+                <tr><th class="ps-3">Best for&hellip;</th><th>Caterer</th></tr>
+              </thead>
+              <tbody>
+                <tr><td class="ps-3">Brunch &amp; coffee downtown</td><td><a href="#sweet-palm-events">Sweet Palm Events</a></td></tr>
+                <tr><td class="ps-3">Southern biscuits &amp; grits</td><td><a href="#callies-hot-little-biscuit">Callie's</a></td></tr>
+                <tr><td class="ps-3">NYC-style trays for 10</td><td><a href="#bodega-catering">Bodega</a></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATERERS -->
+  <section id="caterers" style="background: var(--pink-pale);">
+    <div class="container">
+      <h2 class="section-title">3 brunch caterers near you in Charleston</h2>
+      <p class="section-intro mb-4">All three serve the Charleston area. Menus, delivery areas, and minimums change, so contact each caterer directly to confirm details for your date and address.</p>
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-4" id="sweet-palm-events">
+          <article class="spot-card featured">
+            <div class="photo-slot">
+              <img src="images/sweet-palm-brunch-catering-charleston.png" alt="Brunch catering spread from Sweet Palm Coffee &amp; Food in Charleston, SC" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="spot-num">#1</span><span class="featured-label">Local Pick</span>
+              <h3><a href="https://sweetpalmevents.com/" target="_blank" rel="noopener">Sweet Palm Events</a></h3>
+              <p class="spot-meta">Catering from Sweet Palm Coffee &amp; Food &middot; 471 King St</p>
+              <div><span class="tag">Brunch platters</span><span class="tag">Coffee</span><span class="tag">Upper King</span></div>
+              <p>Sweet Palm Events is the catering side of Sweet Palm Coffee &amp; Food, the caf&eacute; on Upper King Street. For a bachelorette weekend, it's the easy way to get breakfast and brunch food plus coffee brought to the group, so nobody has to rally for a reservation the morning after a big night out. Because the caf&eacute; is right on King Street, it's especially convenient for downtown Airbnbs and hotels.</p>
+              <div class="bach-tip"><strong>Bachelorette tip:</strong> Ask about a coffee service with the brunch order. A hot coffee setup the morning after is the move the whole group will thank you for.</div>
+              <a href="https://sweetpalmevents.com/" target="_blank" rel="noopener" class="btn btn-sm btn-outline-rose mt-3">Get a Catering Quote</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4" id="callies-hot-little-biscuit">
+          <article class="spot-card">
+            <div class="photo-slot">
+              <img src="images/callies-biscuit-brunch-catering.png" alt="Biscuit tray and grits bar brunch catering from Callie's Hot Little Biscuit in Charleston" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="spot-num">#2</span>
+              <h3><a href="#">Callie's Hot Little Biscuit Catering</a></h3>
+              <p class="spot-meta">Biscuit shop at 476&frac12; King St &middot; Catering kitchen in North Charleston</p>
+              <div><span class="tag">Biscuits</span><span class="tag">Grits bar</span><span class="tag">Southern classic</span></div>
+              <p>Callie's is one of Charleston's best-known biscuit shops, and its catering covers the Southern brunch staples a bachelorette group actually wants: hot little biscuits, pimento cheese trays, tea sandwiches, and a grits bar. It caters bachelorette parties and weddings, so a Southern brunch spread at your rental is right in its wheelhouse.</p>
+              <div class="bach-tip"><strong>Bachelorette tip:</strong> A grits bar plus a biscuit tray makes a full brunch spread with almost no setup. Order a little extra for the next-morning leftovers.</div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4" id="bodega-catering">
+          <article class="spot-card">
+            <div class="photo-slot">
+              <img src="images/bodega-brunch-catering-charleston.png" alt="Breakfast sandwiches, pancakes and brunch trays from Bodega catering in Charleston" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="spot-num">#3</span>
+              <h3><a href="#">Bodega Catering</a></h3>
+              <p class="spot-meta">Downtown Charleston &amp; Mount Pleasant</p>
+              <div><span class="tag">Breakfast sandwiches</span><span class="tag">Trays for 10</span><span class="tag">48-hr notice</span></div>
+              <p>Bodega is the New York&ndash;inspired brunch spot, and its catering menu brings that vibe to your rental: egg sandwiches and burritos, scrambled eggs, bacon, sausage, home fries, pancakes, pastries, yogurt parfaits, and a smoked salmon platter. Most group items are sized for 10 people, so ordering for a bachelorette crew is easy math.</p>
+              <div class="bach-tip"><strong>Bachelorette tip:</strong> Bodega asks for 48 hours' notice on catering, so place your order before you even get to Charleston.</div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW TO PLAN -->
+  <section id="planning">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-6">
+          <h2 class="section-title">How to order brunch catering for a group</h2>
+          <h3 class="h5 mt-4">Order at least 2&ndash;3 days ahead</h3>
+          <p>Most brunch caterers need notice, and weekend slots fill up in spring and fall wedding season. Place your order before you travel so it's one less thing to handle once you land.</p>
+          <h3 class="h5 mt-4">Plan food for the headcount, plus a little extra</h3>
+          <p>Many group trays are sized for about 10 people. For a group of 12 to 15, order two trays of the main items and add a pastry or fruit platter so nobody goes hungry.</p>
+          <h3 class="h5 mt-4">Set up your own mimosa bar</h3>
+          <p>Pick up champagne, orange juice, and a couple of fruit juices the day before, then set out flutes, fresh berries, and a sign for the bride. It's the easiest way to make a catered brunch feel like a party.</p>
+          <h3 class="h5 mt-4">Confirm delivery or pickup details</h3>
+          <p>Share the full rental address, gate or parking instructions, and a contact number. If pickup is the only option, send one person early while the rest of the group gets ready.</p>
+          <h3 class="h5 mt-4">Schedule it around your activity</h3>
+          <p>If you have a boat charter or tour booked, time the brunch delivery for about two hours before so there's time to eat, take photos, and get going.</p>
+        </div>
+        <div class="col-lg-6">
+          <h2 class="section-title">Sample brunch catering morning</h2>
+          <p class="section-intro mb-4">An easy way to run brunch catering at your Charleston rental:</p>
+          <div class="timeline">
+            <div class="step"><div class="time">9:00 AM</div><div>Coffee and pastries arrive. Let everyone wake up slowly.</div></div>
+            <div class="step"><div class="time">9:45 AM</div><div>Maid of honor sets up the mimosa bar and the bride's seat.</div></div>
+            <div class="step"><div class="time">10:30 AM</div><div>Main brunch spread goes out: biscuits, eggs, a grits bar, or breakfast sandwiches.</div></div>
+            <div class="step"><div class="time">11:00 AM</div><div>Toasts, gifts, and group photos at the table.</div></div>
+            <div class="step"><div class="time">12:30 PM</div><div>Head out for Rainbow Row, a harbor cruise, or King Street shopping.</div></div>
+            <div class="step mb-0"><div class="time">Tomorrow</div><div>Go out for brunch instead. See our <a href="https://charlestonbachelorettebrunch.com/">brunch restaurant picks</a>.</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout mt-5">
+        <div class="row align-items-center g-3">
+          <div class="col-lg-8">
+            <h3 class="h4 mb-2">Would rather go out for brunch?</h3>
+            <p class="mb-0">See the <a href="https://charlestonbachelorettebrunch.com/">best Charleston bachelorette brunch spots</a>, from Sunday gospel brunch to rooftop views. For things to do after brunch, visit <a href="https://charlestonbacheloretteactivities.com/">Charleston Bachelorette Activities</a>.</p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a href="https://charlestonbachelorettebrunch.com/" class="btn btn-rose">See Brunch Restaurants</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-5">
+          <h4>Charleston Bachelorette Brunch</h4>
+          <p class="mb-0">A local guide to the best brunch spots in Charleston, SC for bachelorette parties and girls' weekends.</p>
+        </div>
+        <div class="col-md-3">
+          <h4>Guide</h4>
+          <ul class="list-unstyled mb-0">
+            <li><a href="index.html#brunch-spots">Best Brunch Spots</a></li>
+            <li><a href="index.html#after-brunch">After-Brunch Activities</a></li>
+            <li><a href="index.html#planning-tips">Planning Tips</a></li>
+            <li><a href="brunch-catering.html">Brunch Catering</a></li>
+            <li><a href="https://charlestonbacheloretteactivities.com/">Charleston Bachelorette Activities</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4>Site</h4>
+          <ul class="list-unstyled mb-0">
+            <li><a href="about.html">About</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-secondary my-4">
+      <p class="small mb-0">&copy; 2026 Charleston Bachelorette Brunch. Local Charleston guide; see <a href="about.html">About</a> for how we choose listings. Hours, menus, and prices change, so confirm details with each business before you book.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
